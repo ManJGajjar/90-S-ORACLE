@@ -1,0 +1,139 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #F0F0F0;
+    color: #000033;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.icons{
+    display: flex;
+    gap: 20px; /* Adjust spacing between links */
+}
+
+header {
+    background-color: #3c74b0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.looping-text {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { text-indent: 100%; }
+    100% { text-indent: -100%; }
+  }
+
+.news-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #003399;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.news-item:hover {
+    background-color: #0047b3;
+}
+
+.news-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #CCCCCC;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #000066;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-list li {
+    border: 2px solid #000066;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F0F0F8;
+    width: 250px;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #000066;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000066;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
